@@ -1,4 +1,6 @@
-CREATE TABLE "public.Product" (
+DROP TABLE IF EXISTS products;
+
+CREATE TABLE products (
 	"id" int NOT NULL,
 	"name" TEXT NOT NULL,
 	"slogan" TEXT NOT NULL,
@@ -11,9 +13,9 @@ CREATE TABLE "public.Product" (
   OIDS=FALSE
 );
 
+DROP TABLE IF EXISTS styles;
 
-
-CREATE TABLE "public.Styles" (
+CREATE TABLE styles (
 	"style_id" int NOT NULL,
 	"name" TEXT NOT NULL,
 	"original_price" TEXT NOT NULL,

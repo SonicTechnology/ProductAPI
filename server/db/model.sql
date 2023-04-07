@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS products;
+-- DROP TABLE IF EXISTS products;
 
 CREATE TABLE products (
 	"id" int NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE products (
   OIDS=FALSE
 );
 
-DROP TABLE IF EXISTS styles;
+-- DROP TABLE IF EXISTS styles;
 
 CREATE TABLE styles (
 	"style_id" int NOT NULL,
@@ -28,8 +28,6 @@ CREATE TABLE styles (
 ) WITH (
   OIDS=FALSE
 );
-
-
 
 
 ALTER TABLE "Styles" ADD CONSTRAINT "Styles_fk0" FOREIGN KEY ("product_id") REFERENCES "Product"("id");

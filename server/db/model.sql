@@ -30,7 +30,7 @@ CREATE TABLE skus (
 	"id" int UNIQUE NOT NULL,
 	"style_id" int NOT NULL,
 	"size" TEXT NOT NULL,
-	"quantity" TEXT NOT NULL,
+	"quantity" int NOT NULL,
 	CONSTRAINT "Skus_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE

@@ -4,7 +4,7 @@
   "description": "An API that acts as a server to handle requests needed to generate the overview component of a e-commerce product page, and as a database optimized specifically for these requests.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "dotenv -e .env k6 run test/tests.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^5.3.6",
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.2.1",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
+    "newrelic": "^9.15.0",
     "pg": "^8.10.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }

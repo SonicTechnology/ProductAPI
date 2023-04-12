@@ -1,8 +1,12 @@
+require('dotenv').config();
 const Pool = require("pg").Pool;
+
+console.log(process.env.DB_NAME, 'db name');
+
 const pool = new Pool({
-  database: "mydb",
-  password: "root",
-  port: 5432,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASS,
+  port: process.env.DB_PORT,
 });
 
 const getProduct = (req, res) => {

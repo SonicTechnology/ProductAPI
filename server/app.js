@@ -18,7 +18,7 @@ app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
 })
 
-app.get('loaderio-2425d2acd7e50dd362d7c98448aa8df0', (req, res) => res.send('loaderio-2425d2acd7e50dd362d7c98448aa8df0'))
+app.get('/loaderio-2425d2acd7e50dd362d7c98448aa8df0', (req, res) => res.send('loaderio-2425d2acd7e50dd362d7c98448aa8df0'))
 
 app.get("/products/:id", queries.getProduct);
 app.get("/products/:id/styles", queries.getStyles);

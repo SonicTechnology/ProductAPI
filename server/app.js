@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 const PORT = 3001 || process.env.PORT;
 // const router = require("./routes.js");
-// const morgan = require("morgan");
+const morgan = require("morgan");
 const cors = require("cors");
 const queries = require("./queries.js");
 

@@ -24,7 +24,6 @@ const getProduct = (req, res) => {
 
 const getStyles = (req, res) => {
   const id = parseInt(req.params.id);
-  console.log(req.params.id, 'param id');
   let result = {
     product_id: req.params.id
   }
@@ -32,7 +31,6 @@ const getStyles = (req, res) => {
     if (error) {
       res.send(error, `error retrieving styles for product with id ${id}`);
     } else {
-      console.log(results, 'result after receiving data');
       result.results = results.rows;
       res.status(200).json(result);
     }

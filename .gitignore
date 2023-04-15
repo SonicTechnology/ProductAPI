@@ -3,3 +3,4 @@ data
 .env
 newrelic_agent.log
 newrelic.js
+apidata.pgsql
